@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.login-register-dialog {
+    // display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,.8);
+
+    >div {
+        position: fixed;
+        width: 400px;
+        height: 250px;
+        padding: 0 10px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #FFF;
+        overflow: hidden;
+        .title {
+
+            position: relative;
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 8px;
+            cursor: pointer;
+            span {
+                padding: 0 12px;
+            }
+            span.cur {
+                color: orange;
+                font-weight: bold;
+                
+                
+            }
+            em {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 56px;
+                height: 2px;
+                background-color: orange;
+                transition: left .5s;
+                // transform: translateX(61px);
+            }
+        }
+        .content {
+            height: 192px;
+            label {
+                display: block;
+                width: 50%;
+                margin: 0 auto;
+                input {
+                    display: block;
+                    width: 100%;
+                    margin: 10px 0;
+                }
+            }
+
+            .content-wrap {
+                width: 200%;
+                height: 100%;
+                transition: transform .5s;
+                // position: absolute;
+                // display: flex;
+                >div {
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                    overflow-y: auto;
+                    button {
+                        display: block;
+                        margin: 22px auto;
+                        border: 0 none;
+                        outline: 0 none;
+
+                        width: 108px;
+                        height: 38px;
+                        
+                        background-color:rgba(120, 120,120,1);
+                        cursor: pointer;
+                        color: #FFF;
+                        transition: background-color .5s;
+                        // transition: color 2s;
+
+                        &:hover {
+                            background-color: orange;
+                            // color:red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

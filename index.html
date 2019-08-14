@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/inde.min.css">
+
+</head>
+
+<body>
+    <div class="login-register-dialog" id="dialog">
+        <div>
+            <div class="title">
+                <span class="cur" id="login">登录</span>
+                <span id="register"> 注册</span>
+                <em class="line"></em>
+            </div>
+            <div class="content">
+                <div class="content-wrap">
+                    <div class="left">
+                        <label>用户名：
+                            <input type="text" name="username" id="usname">
+                        </label>
+                        <label>密码：
+                            <input type="password" name="password" id="pwds">
+                        </label>
+                        <button id="login-btn">登录</button>
+                    </div>
+                    <div class="right">
+                        <label>邮箱：
+                            <input type="text" name="new-email" id="emails">
+                        </label>
+                        <label>用户名：
+                            <input type="text" name="new-username" id="names">
+                        </label>
+                        <label>密码：
+                            <input type="password" name="new-password" id="pwd">
+                        </label>
+                        <button id="register-btn">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button id="get-canvas-data">获取canvas数据</button>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>

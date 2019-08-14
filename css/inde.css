@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.login-register-dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login-register-dialog > div {
+  position: fixed;
+  width: 400px;
+  height: 250px;
+  padding: 0 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.login-register-dialog > div .title {
+  position: relative;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.login-register-dialog > div .title span {
+  padding: 0 12px;
+}
+
+.login-register-dialog > div .title span.cur {
+  color: orange;
+  font-weight: bold;
+}
+
+.login-register-dialog > div .title em {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 2px;
+  background-color: orange;
+  transition: left .5s;
+}
+
+.login-register-dialog > div .content {
+  height: 192px;
+}
+
+.login-register-dialog > div .content label {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.login-register-dialog > div .content label input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.login-register-dialog > div .content .content-wrap {
+  width: 200%;
+  height: 100%;
+  transition: transform .5s;
+}
+
+.login-register-dialog > div .content .content-wrap > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.login-register-dialog > div .content .content-wrap > div button {
+  display: block;
+  margin: 22px auto;
+  border: 0 none;
+  outline: 0 none;
+  width: 108px;
+  height: 38px;
+  background-color: #787878;
+  cursor: pointer;
+  color: #FFF;
+  transition: background-color .5s;
+}
+
+.login-register-dialog > div .content .content-wrap > div button:hover {
+  background-color: orange;
+}
